@@ -1,0 +1,90 @@
+
+.scrollcase_container {
+  overflow: hidden;
+  position: relative;
+}
+
+.scrollcase {
+  position: absolute;
+}
+
+.scrollcase .pane {
+  float: left;
+  position: relative;
+}
+
+.scrollcase_slide_track {
+  height: 20px;
+  width: 966px;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+  background: url(/images/track_bg.png) 0 0 repeat-x;
+}
+
+.scrollcase_arrow_left, .scrollcase_arrow_right {
+  width: 19px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.scrollcase_arrow_left {
+  float: left;
+  background: url(/images/track_left.png) 0 0 no-repeat;
+}
+
+.scrollcase_arrow_right {
+  float: right;
+  background: url(/images/track_right.png) 0 0 no-repeat;
+}
+
+.scrollcase_slide_track .edge {
+  width: 7px;
+  height: 20px;
+}
+
+.scrollcase_slide_track .left {
+  float: left;
+  background: url(/images/track_inner_left.png) 0 0 no-repeat;
+}
+
+.scrollcase_slide_track .right {
+  float: right;
+  background: url(/images/track_inner_right.png) 0 0 no-repeat;
+}
+
+.scrollcase_slide_track .handle {
+  width: 101px;
+  height: 20px;
+  cursor: pointer;
+  opacity: 0.6;
+  filter: alpha(opacity: 60);
+  background: url(/images/handle.png) 0 0 no-repeat;
+}
+
+.scrollcase_slide_track .label {
+  font-family: Georgia, Arial;
+  position: absolute;
+  top: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+  color: #000;
+}
+
+.scrollcase_slide_track .label:hover {
+  color: #333;
+}
+
+.scrollcase_slide_track .label[rel="0"] {
+  left: 25px;
+}
+
+.scrollcase_slide_track .label[rel="1"] {
+  left: 447px;
+}
+
+.scrollcase_slide_track .label[rel="2"] {
+  left: 900px;
+}
